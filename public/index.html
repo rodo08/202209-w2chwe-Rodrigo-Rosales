@@ -6,11 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./src/imgs/favicon-orange_alt.ico" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/styles.css">
   <title>Game of Life</title>
 </head>
 
-<body>
+<body onload="inicializa();">
 
-</body>
+  <nav class="main-nav">
+
+    <div class="main-nav__container">
+      <h2>Game of Life</h2>
+
+      <ul class="main-nav__list">
+
+        <li class="main-nav__item">
+          <button>⮊ Start</button>
+        </li>
+        <li class="main-nav__item">
+          <button>↻ Reload</button>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <article>
+    <div class="container">
+      <canvas id="screen"></canvas>
+    </div>
+  </article>
+
+  <script src="/js/index.js" type="module"></script>
 
 </html>
